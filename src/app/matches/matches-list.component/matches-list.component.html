@@ -1,0 +1,9 @@
+<div class="matches-container">
+  <mat-card *ngFor="let match of matches" class="match-card">
+    <mat-card-title>{{ match.homeTeam }} vs {{ match.awayTeam }}</mat-card-title>
+    <mat-card-content>
+      <p>Starts: {{ match.startAt | date:'short' }}</p>
+      <button mat-raised-button color="accent">Place Bet</button>
+    </mat-card-content>
+  </mat-card>
+</div>
